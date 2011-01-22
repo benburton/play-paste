@@ -22,8 +22,8 @@ public class ViewPaste extends Controller {
 	public static void index(String c) {
 		Paste paste = Paste.findByCode(c);
 		if (paste != null) {
-			List<String> lines = Arrays.asList(paste.content.split("\n"));
-			render(lines);
+			List<String> lines = Arrays.asList(paste.getContent().split("\n"));
+			render(paste, lines);
 		} else {
 			notFound();
 		}

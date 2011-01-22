@@ -1,0 +1,13 @@
+body {
+	background: #fafcfe;
+}
+
+.right {
+	text-align: right;
+}
+
+#centered {
+	width: 645px;
+	margin-left: auto;
+	margin-right: auto;
+}

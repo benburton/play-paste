@@ -1,3 +1,21 @@
+#metadata {
+	background-color: #fffbd7;
+	border: #aa9900 solid 1px;
+	padding: 5px;
+	width: 500px;
+}
+
+#metadata, .label {
+
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+
+}
+
+.bold {
+	font-weight: bold;
+}
+
 pre.line_numbers {
     background-color: #ECECEC;
     border-right: 1px solid #DDDDDD;
@@ -5,6 +23,7 @@ pre.line_numbers {
     padding: 1em 0.5em;
     text-align: right;
     width:30px;
+    cursor: pointer; cursor: hand;
 }
 
 pre.code {

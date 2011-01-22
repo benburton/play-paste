@@ -1,6 +1,35 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
-<form action="@{CreatePaste.create()}" method="POST">
-    <textarea name="paste" cols=80 rows=30></textarea> 
-    <input type="submit" value="Paste!" />
-</form>
+<div id="centered">
+	<div class="right"><img src="@{'/public/images/logo.png'}"></div>
+	<form action="@{CreatePaste.create()}" method="POST">
+		<span class="label bold">Title:</span><input type="text" size="32" name="title" />
+		<span class="label bold">Author:</span><input type="text" name="author" />
+		<span class="label bold">Type:</span> 
+		<select name="contentType">
+    		<option>ActionScript</option> 
+    		<option>Bash (shell)</option> 
+    		<option>C#</option> 
+    		<option>C/C++</option> 
+    		<option>CSS</option> 
+    		<option>Diff</option> 
+    		<option>Go</option> 
+    		<option>HTML (ERB / Rails)</option> 
+    		<option>HTML / XML</option> 
+    		<option selected="selected">Java</option> 
+    		<option>Javascript</option> 
+    		<option>Objective-C/C++</option> 
+    		<option>Perl</option> 
+    		<option>PHP</option> 
+    		<option>Plain text</option> 
+    		<option>Python</option> 
+    		<option>Ruby</option> 
+    		<option>Ruby on Rails</option> 
+    		<option>SQL</option> 
+    		<option>YAML</option>
+    		<option>?</option>
+		</select>
+	    <textarea name="content" cols=80 rows=30></textarea><br />
+	    <div class="right"><span class="ds"><span class="lsbb"><button type="submit" class="lsb">Submit</button></span></span></div>
+	</form>
+</div>

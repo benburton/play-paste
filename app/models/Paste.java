@@ -2,6 +2,7 @@ package models;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Lob;
@@ -15,19 +16,40 @@ import play.db.jpa.Model;
  * @author Ben Burton
  */
 @Entity
+@SuppressWarnings("unused")
 public class Paste extends Model {
 
 	@Required
-	public String code;
+	private String code;
 
 	@Lob
-	public String content;
+	private String content;
+
+	private String title;
+
+	private String author;
+
+	private String contentType;
+
+	private Date createdOn;
 
 	private static final long serialVersionUID = 1L;
 
-	public Paste(String content) {
+	public Paste(String title, String author, String contentType, String content) {
 		this.code = findRandomCode();
+		this.title = title;
+		this.author = author;
+		this.contentType = contentType;
 		this.content = content;
+		this.createdOn = new Date();
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public String getContent() {
+		return content;
 	}
 
 	/**
