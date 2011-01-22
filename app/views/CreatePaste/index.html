@@ -1,0 +1,6 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+<form action="@{CreatePaste.create()}" method="POST">
+    <textarea name="paste" cols=80 rows=30></textarea> 
+    <input type="submit" value="Paste!" />
+</form>

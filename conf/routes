@@ -1,0 +1,16 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Create Pastes
+GET     /                                       CreatePaste.index
+
+# Display Pastes
+GET		/paste									ViewPaste.index
+GET		/paste{c}								ViewPaste.index
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}
