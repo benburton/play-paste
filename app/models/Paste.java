@@ -10,6 +10,8 @@ import play.data.validation.Required;
 import play.db.jpa.Model;
 
 /**
+ * The main model for the application. Contains a user's pasted data.
+ * 
  * @author Ben Burton
  */
 @Entity

@@ -1,5 +1,8 @@
 package controllers;
 
+import java.util.Arrays;
+import java.util.List;
+
 import models.Paste;
 import play.mvc.Controller;
 
@@ -19,7 +22,8 @@ public class ViewPaste extends Controller {
 	public static void index(String c) {
 		Paste paste = Paste.findByCode(c);
 		if (paste != null) {
-			render(paste);
+			List<String> lines = Arrays.asList(paste.content.split("\n"));
+			render(lines);
 		} else {
 			notFound();
 		}
