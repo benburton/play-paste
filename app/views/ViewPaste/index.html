@@ -2,13 +2,13 @@
 #{set title:'Home' /}
 
 <table id="metadata">
-	#{if paste.title != null && paste.title.length() != 0}
+	#{if paste.title}
 		<tr><td width="90px"><span class="bold">Title:</span></td><td>${paste.title}</td></tr>		
 	#{/if}
-	#{if paste.author != null && paste.author.length() != 0}
+	#{if paste.author}
 		<tr><td width="90px"><span class="bold">Author:</span></td><td>${paste.author}</td></tr>
 	#{/if}
-	#{if paste.contentType != null && paste.contentType.length() != 0}
+	#{if paste.contentType}
 		<tr><td width="90px"><span class="bold">Content Type:</span></td><td>${paste.contentType}</td></tr>
 	#{/if}
 	<tr><td width="90px"><span class="bold">Created:</span></td><td>${paste.createdOn.since()}</td></tr>
