@@ -7,8 +7,14 @@
         <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
         <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/paste.css'}">
         <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/buttons.css'}">
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/zenburn.css'}">
         #{get 'moreStyles' /}
         <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}" type="text/javascript" charset="utf-8"></script>
+        <script src="@{'/public/javascripts/highlight.pack.js'}" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        hljs.tabReplace = '    ';
+        hljs.initHighlightingOnLoad();
+        </script>
         #{get 'moreScripts' /}
     </head>
     <body>
