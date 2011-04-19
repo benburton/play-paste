@@ -3,8 +3,17 @@
 	border: #aa9900 solid 1px;
 	padding: 5px;
 	width: 500px;
+    margin:10px auto auto auto;
+    border-collapse:separate;
+    border-spacing:7px;
 }
 
+table{
+    margin:auto;
+    min-width:500px;
+    border-collapse:separate;
+    border-spacing:7px;
+}
 #metadata, label {
 
 	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
@@ -31,8 +40,10 @@ textarea{
     width:100%;    
 }
 
-button{
+input[type=submit]{
     margin-top:10px;    
+    font-family:Arial;
+    font-size:14px;
 }
 pre.line_numbers {
     background-color: #ECECEC;
