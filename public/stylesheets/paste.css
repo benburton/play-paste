@@ -5,17 +5,35 @@
 	width: 500px;
 }
 
-#metadata, .label {
+#metadata, label {
 
 	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     font-size: 11px;
 
 }
 
-.bold {
+label{
+    margin:0px 5px 10px 0px;
 	font-weight: bold;
+    display:inline-block;
 }
 
+input{
+    width:125px;
+    margin-left:5px;
+}
+
+input[name=title]{
+    width:200px;
+}
+
+textarea{
+    width:100%;    
+}
+
+button{
+    margin-top:10px;    
+}
 pre.line_numbers {
     background-color: #ECECEC;
     border-right: 1px solid #DDDDDD;

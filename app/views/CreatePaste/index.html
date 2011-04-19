@@ -3,9 +3,9 @@
 <div id="centered">
 	<div class="right"><img src="@{'/public/images/logo.png'}"></div>
 	<form action="@{CreatePaste.create()}" method="POST">
-		<span class="label bold">Title:</span><input type="text" size="32" name="title" />
-		<span class="label bold">Author:</span><input type="text" name="author" />
-		<span class="label bold">Type:</span> 
+		<label>Title:<input type="text" name="title" /></label>
+		<label>Author:<input type="text" name="author" /></label>
+		<label>Type:</label> 
 		<select name="contentType">
     		<option>ActionScript</option> 
     		<option>Bash (shell)</option> 
@@ -30,6 +30,6 @@
     		<option>?</option>
 		</select>
 	    <textarea name="content" cols=80 rows=30></textarea><br />
-	    <div class="right"><span class="ds"><span class="lsbb"><button type="submit" class="lsb">Submit</button></span></span></div>
+	    <div class="right"><button type="submit">Submit</button></div>
 	</form>
 </div>
